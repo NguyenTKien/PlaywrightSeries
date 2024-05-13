@@ -1,0 +1,18 @@
+
+	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÓÃ•‰÷1J$95ed3803-a260-4554-b5b2-7a776091b13d
+	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÔÃ•‰÷1J$5067344b-a5bd-4d09-9a83-8ef3d7118552
+¥
+java:S1488Y"bImmediately return this expression instead of assigning it to the temporary variable "base64Path".(Ò¨¤†8ØÃ•‰÷1J$ef58cf18-b284-42f7-95d3-c397e386f88a
+g
+java:S5164"Call "remove()" on "tlBrowser".(­×±¬ÿÿÿÿÿ8óÃ•‰÷1J$6b3623f3-f6ea-403e-898d-8c4325421e34
+i
+java:S5164"&Call "remove()" on "tlBrowserContext".(“ÎÛ¨8óÃ•‰÷1J$4819d051-d33b-4119-ac73-9bb8751dea4e
+d
+java:S5164"Call "remove()" on "tlPage".(—·…Ìùÿÿÿÿ8óÃ•‰÷1J$d12e0e94-00be-4cce-82ed-9b7196ca8178
+e
+java:S5164""Call "remove()" on "tlPlaywright".(€Ğâ8óÃ•‰÷1J$54356d85-a93d-47fc-bb03-b186ac832929
+m	java:S106("+Replace this use of System.out by a logger.(ğıÇİ8ùÃ•‰÷1J$8cc951fd-b13c-4bd3-bcaa-edaef905b166
+ƒ	java:S125)"<This block of commented-out lines of code should be removed.(â¿”Êùÿÿÿÿ8úÃ•‰÷1J$a1b54929-1255-41c3-b3c7-c20a73bf7c0e
+r	java:S106:"+Replace this use of System.out by a logger.(öå©ïÿÿÿÿÿ8şÃ•‰÷1J$f54f5aa3-0832-43fd-983a-c3f774e34788
+‡
+java:S2147O"DCombine this catch with the one at line 77, which has the same body.(ï­£Ä8€Ä•‰÷1J$4e11934f-bc73-4d6d-bfb9-1dd0d60dcc1f
