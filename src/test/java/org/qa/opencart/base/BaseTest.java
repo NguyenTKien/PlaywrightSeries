@@ -6,6 +6,7 @@ import org.qa.opencart.pages.LoginPage;
 import org.qa.opencart.factory.PlaywrightFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.util.Properties;
 
@@ -16,10 +17,16 @@ public class BaseTest {
     protected LoginPage loginPage;
     protected Properties prop;
 
+    @Parameters({ "browser"})
     @BeforeTest
-    public void setup() {
+    public void setup(String browserName) {
         pf = new PlaywrightFactory();
+
         prop = pf.initProperties();
+        if (browserName != null) {
+            prop.setProperty("browser", browserName);
+        }
+
         page = pf.initBrowser(prop);
         homePage = new HomePage(page);
     }

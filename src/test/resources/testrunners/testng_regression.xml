@@ -7,12 +7,21 @@
         <listener class-name="org.qa.opencart.listeners.ExtentReportListener"></listener>
     </listeners>
 
-    <test name="Open Cart Home Page Test">
+    <test name="Open Cart Home Page Test Chromium">
+        <parameter name="browser" value="chromium"></parameter>
         <classes>
             <class name="org.qa.opencart.factory.HomePageTest"/>
         </classes>
     </test>
-    <test name="Open Cart Login Page Test">
+    <test name="Open Cart Login Page Test Chromium">
+        <parameter name="browser" value="chromium"></parameter>
+        <classes>
+            <class name="org.qa.opencart.factory.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Open Cart Login Page Test Firefox">
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="org.qa.opencart.factory.LoginPageTest"/>
         </classes>
