@@ -6,10 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginPageTest extends BaseTest {
+
     @Test(priority = 1)
     public void loginPageTitleTest() {
         loginPage = homePage.navigateToLoginPage();
-        String actualText = loginPage.getLoginPageTitle();
+        String actualText = loginPage.getPageTitle(page);
         Assert.assertEquals(actualText, AppConstants.LOGIN_PAGE_TITLE);
     }
 

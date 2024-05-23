@@ -3,13 +3,14 @@ package org.qa.opencart.pages;
 
 import com.microsoft.playwright.Page;
 
-public class HomePage {
+public class HomePage extends BasePage{
     private Page page;
     //Locators String
     private String searchField = "input[name=search]";
     private String searchIcon = "#search > span > button";
     private String textSearch = "#content > h1";
     private String loginLink = "a:text('Login')";
+    private String registerLink = "a:text('Register')";
     private String myAccountLink = "#top-links > ul > li > a[title='My Account']";
 
     //Constructor
@@ -18,14 +19,6 @@ public class HomePage {
     }
 
     //Page actions/ methods
-    public String getPageURL() {
-        return page.url();
-    }
-
-    public String getHomePageTitle() {
-        return page.title();
-    }
-
     public String doSearch(String productName) {
         page.fill(searchField, productName);
         page.click(searchIcon);
@@ -36,5 +29,11 @@ public class HomePage {
         page.click(myAccountLink);
         page.click(loginLink);
         return new LoginPage(page);
+    }
+
+    public RegisterPage navigateToRegisterPage() {
+        page.click(myAccountLink);
+        page.click(registerLink);
+        return new RegisterPage(page);
     }
 }

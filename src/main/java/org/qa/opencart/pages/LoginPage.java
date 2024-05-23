@@ -2,7 +2,7 @@ package org.qa.opencart.pages;
 
 import com.microsoft.playwright.Page;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
     private Page page;
     //Locators
     private String emailId = "//input[@id='input-email']";
@@ -17,10 +17,6 @@ public class LoginPage {
     }
 
     //Page actions/ methods
-    public String getLoginPageTitle() {
-        return page.title();
-    }
-
     public boolean isForgotPasswordLinkAvailable() {
         return page.isVisible(forgotPasswordLink);
     }

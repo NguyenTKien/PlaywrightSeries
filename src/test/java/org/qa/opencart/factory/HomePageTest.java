@@ -10,13 +10,13 @@ public class HomePageTest extends BaseTest {
 
     @Test
     public void homePageTitleTest() {
-        String actualTitle = homePage.getHomePageTitle();
+        String actualTitle = homePage.getPageTitle(page);
         Assert.assertEquals(actualTitle, AppConstants.HOME_PAGE_TITLE);
     }
 
     @Test
     public void homePageURLTest() {
-        String actualURL = homePage.getPageURL();
+        String actualURL = homePage.getPageURL(page);
         Assert.assertEquals(actualURL, prop.getProperty("url"));
     }
 

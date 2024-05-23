@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class BaseTest {
     PlaywrightFactory pf;
-    Page page;
+    protected Page page;
     protected HomePage homePage;
     protected LoginPage loginPage;
     protected Properties prop;
