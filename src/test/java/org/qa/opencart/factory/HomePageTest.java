@@ -1,7 +1,7 @@
 package org.qa.opencart.factory;
 
 import org.qa.opencart.base.BaseTest;
-import org.qa.opencart.constants.AppConstants;
+import org.qa.opencart.helpers.AppConstants;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

@@ -19,11 +19,17 @@
             <class name="org.qa.opencart.factory.LoginPageTest"/>
         </classes>
     </test>
-
-    <test name="Open Cart Login Page Test Firefox">
-        <parameter name="browser" value="firefox"></parameter>
+    <test name="Open Cart Register Page Test Chromium">
+        <parameter name="browser" value="chromium"></parameter>
         <classes>
-            <class name="org.qa.opencart.factory.LoginPageTest"/>
+            <class name="org.qa.opencart.factory.RegisterPageTest"/>
         </classes>
     </test>
+
+<!--    <test name="Open Cart Login Page Test Firefox">-->
+<!--        <parameter name="browser" value="firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="org.qa.opencart.factory.LoginPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

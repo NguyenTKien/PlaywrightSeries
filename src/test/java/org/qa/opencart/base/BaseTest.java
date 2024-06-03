@@ -4,6 +4,7 @@ import com.microsoft.playwright.Page;
 import org.qa.opencart.pages.HomePage;
 import org.qa.opencart.pages.LoginPage;
 import org.qa.opencart.factory.PlaywrightFactory;
+import org.qa.opencart.pages.RegisterPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -15,6 +16,7 @@ public class BaseTest {
     protected Page page;
     protected HomePage homePage;
     protected LoginPage loginPage;
+    protected RegisterPage registerPage;
     protected Properties prop;
 
     @Parameters({ "browser"})

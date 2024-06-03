@@ -1,7 +1,7 @@
 package org.qa.opencart.factory;
 
 import com.microsoft.playwright.*;
-import org.qa.opencart.constants.AppConstants;
+import org.qa.opencart.helpers.AppConstants;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
